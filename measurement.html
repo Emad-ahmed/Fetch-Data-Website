@@ -1,0 +1,3042 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Measurement</title>
+</head>
+
+<body>
+
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-2 mt-3">
+        <a href="index.html" style="font-size: 1.5rem;"><img src="menu4.png" id="menuBtn2" class="mr-3"> Back To
+          Home</a>
+      </div>
+
+      <div class="col-lg-10">
+
+        <p>
+        <div>
+          <a style="width: 100%;" class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            Select Measurement Type <i class="ml-2 fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        </p>
+
+        <div class="collapse" id="collapseExample">
+
+          <div class="card-body bg-info">
+            <div class="dropdown">
+              <a href="#" class="dropbtn text-dark">Temperature <i class="ml-2 fa fa-caret-down"
+                  aria-hidden="true"></i></a>
+              <div class="dropdown-content">
+                <a href="#" id="tire2" onclick="list1()" class="p-1">Now</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire2_one" onclick="list2()" class="p-1">24 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire2_two" onclick="list3()" class="p-1">48 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire2_three" onclick="list4()" class="p-1">72 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire2_four" onclick="list5()" class="p-1">1 Week</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire2_five" onclick="list6()" class="p-1">1 Month</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn text-dark">Wind Speed<i class="ml-2 fa fa-caret-down"
+                  aria-hidden="true"></i></a>
+              <div class="dropdown-content">
+                <a href="#" id="tire3" onclick="winlist1()" class="p-1">Now</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire3_one" onclick="winlist2()" class="p-1">24 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire3_two" onclick="winlist3()" class="p-1">48 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire3_three" onclick="winlist4()" class="p-1">72 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire3_four" onclick="winlist5()" class="p-1">1 Week</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire3_five" onclick="winlist6()" class="p-1">1 Month</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropbtn text-dark">Wind Direction <i class="ml-2 fa fa-caret-down"
+                  aria-hidden="true"></i></a>
+              <div class="dropdown-content">
+                <a href="#" id="tire4" onclick="dirlist1()" class="p-1">Now</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire4_one" onclick="dirlist2()" class="p-1">24 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire4_two" onclick="dirlist3()" class="p-1">48 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire4_three" onclick="dirlist4()" class="p-1">72 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire4_four" onclick="dirlist5()" class="p-1">1 Week</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire4_five" onclick="dirlist6()" class="p-1">1 Month</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn text-dark">Rain <i class="ml-2 fa fa-caret-down" aria-hidden="true"></i></a>
+              <div class="dropdown-content">
+                <a href="#" id="tire5" onclick="rainlist1()" class="p-1">Now</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire5_one" onclick="rainlist2()" class="p-1">24 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire5_two" onclick="rainlist3()" class="p-1">48 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire5_three" onclick="rainlist4()" class="p-1">72 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire5_four" onclick="rainlist5()" class="p-1">1 Week</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire5_five" onclick="rainlist6()" class="p-1">1 Month</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn text-dark">Light<i class="ml-2 fa fa-caret-down" aria-hidden="true"></i></a>
+              <div class="dropdown-content">
+                <a href="#" id="tire6" onclick="lightlist1()" class="p-1">Now</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire6_one" onclick="lightlist2()" class="p-1">24 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire6_two" onclick="lightlist3()" class="p-1">48 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire6_three" onclick="lightlist4()" class="p-1">72 Hour</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire6_four" onclick="lightlist5()" class="p-1">1 Week</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" id="tire6_five" onclick="lightlist6()">1 Month</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="container mt-5">
+    <div id="ser" class="mb-4">
+      <a href="measurement.html" class="btn btn-info" style="width: 40%;">Search</a>
+    </div>
+    <div class="card card-body" id="tablebody">
+      <div>
+        <h4 class="p-2 text-info">Search Here</h4>
+        <input type="text" name="search" class="form-control" placeholder="Measurement Types" id="myinput"
+          onkeyup="searchfun()">
+      </div>
+      <hr>
+      <table class="table   table-bordered table-striped table-hover" id="table1" style="background-color: #f5f6fa;">
+      </table>
+    </div>
+
+    <div class="card card-body" id="tablebody1">
+      <h1 class="border text-center p-3 ave">Average : <span id="average"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 20 Data Of Temperature</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table border-dark   table-bordered table-striped table-hover" id="table2"
+        style="background-color: #f5f6fa;"></table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody2">
+      <h1 class="border text-center p-3 ave">Average : <span id="average1"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Last 24 Hour Data Of Temperature</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table3" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart1" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody3">
+      <h1 class="border text-center p-3 ave">Average : <span id="average2"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Last 48 Hour Data Of Temperature</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table4" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart2" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody4">
+      <h1 class="border text-center p-3 ave">Average : <span id="average3"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Last 72 Hour Data Of Temperature</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table5" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart3" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody5">
+      <h1 class="border text-center p-3 ave">Average : <span id="average4"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Last 1 Week Data Of Temperature</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table6" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart4" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody6">
+      <h1 class="border text-center p-3 ave">Average : <span id="average5"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Last 1 Month Data Of Temperature</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table7" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart5" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <!-- End For This Temperature -->
+
+    <!-- This Is For Wind Speed -->
+
+    <div class="card card-body" id="tablebody7">
+      <h1 class="border text-center p-3 ave">Average : <span id="average6"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 20 Data Of Wind Speed</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table8" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart6" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody8">
+      <h1 class="border text-center p-3 ave">Average : <span id="average7"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 24 Hour Data Of Wind Speed</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table9" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart7" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody9">
+      <h1 class="border text-center p-3 ave">Average : <span id="average8"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 48 Hour Data Of Wind Speed</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table10" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart8" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody10">
+      <h1 class="border text-center p-3 ave">Average : <span id="average9"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 72 Hour Data Of Wind Speed</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table11" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart9" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody11">
+      <h1 class="border text-center p-3 ave">Average : <span id="average10"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Week Data Of Wind Speed</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table12" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart10" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody12">
+      <h1 class="border text-center p-3 ave">Average : <span id="average11"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Month Data Of Wind Speed</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table13" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart11" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <!-- End Of WindSpeed -->
+
+    <!-- Start Wind Direction -->
+
+    <div class="card card-body" id="tablebody13">
+      <h1 class="border text-center p-3 ave">Average : <span id="average12"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 20 Data Of Wind Direction</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table14" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart12" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody14">
+      <h1 class="border text-center p-3 ave">Average : <span id="average13"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 24 Hour Data Of Wind Direction</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table15" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart13" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody15">
+      <h1 class="border text-center p-3 ave">Average : <span id="average14"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 48 Hour Data Of Wind Direction</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table16" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart14" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody16">
+      <h1 class="border text-center p-3 ave">Average : <span id="average15"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 72 Hour Data Of Wind Direction</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table17" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart15" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody17">
+      <h1 class="border text-center p-3 ave">Average : <span id="average16"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Week Data Of Wind Direction</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table18" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart16" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody18">
+      <h1 class="border text-center p-3 ave">Average : <span id="average17"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Month Data Of Wind Direction</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table19" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart17" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+
+    <div class="card card-body" id="tablebody19">
+      <h1 class="border text-center p-3 ave">Average : <span id="average18"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 20 Data Of Rain</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table20" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart18" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody20">
+      <h1 class="border text-center p-3 ave">Average : <span id="average19"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 24 Hour Data Of Rain</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table21" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart19" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody21">
+      <h1 class="border text-center p-3 ave">Average : <span id="average20"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 48 Hour Data Of Rain</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table22" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart20" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody22">
+      <h1 class="border text-center p-3 ave">Average : <span id="average21"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 72 Hour Data Of Rain</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table23" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart21" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody23">
+      <h1 class="border text-center p-3 ave">Average : <span id="average22"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Week Data Of Rain</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table24" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart22" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody24">
+      <h1 class="border text-center p-3 ave">Average : <span id="average23"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Month Data Of Rain</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table25" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart23" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <!-- End Rain -->
+
+
+    <!-- Start Light -->
+
+    <div class="card card-body" id="tablebody25">
+      <h1 class="border text-center p-3 ave">Average : <span id="average24"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 20 Data Of Light</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table26" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart24" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody26">
+      <h1 class="border text-center p-3 ave">Average : <span id="average25"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 24 Hour Data Of Light</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table27" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart25" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody27">
+      <h1 class="border text-center p-3 ave">Average : <span id="average26"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 48 Hour Data Of Light</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table28" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart26" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody28">
+      <h1 class="border text-center p-3 ave">Average : <span id="average27"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 72 Hour Data Of Light</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table29" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart27" width="200" height="100"></canvas>
+      </div>
+    </div>
+    <div class="card card-body" id="tablebody29">
+      <h1 class="border text-center p-3 ave">Average : <span id="average28"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Week Data Of Light</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table30" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart28" width="200" height="100"></canvas>
+      </div>
+    </div>
+
+    <div class="card card-body" id="tablebody30">
+      <h1 class="border text-center p-3 ave">Average : <span id="average29"></span></h1>
+      <h1 class="text-center p-3 nicetext1">Latest 1 Month Data Of Light</h1>
+      <hr style="margin-left: 40px; margin-right: 40px; background-color: brown;">
+      <table class="table   table-bordered table-striped table-hover" id="table31" style="background-color: #f5f6fa;">
+      </table>
+      <div>
+        <hr class="bg-danger">
+        <h1 id="graphHeading" class="mt-4 text-center border-bottom p-3">Graph Chart</h1>
+        <canvas id="myChart29" width="200" height="100"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+
+    var newtabl = document.getElementById('tablebody')
+    var newtabl1 = document.getElementById('tablebody1')
+    var newtabl2 = document.getElementById('tablebody2')
+    var newtabl3 = document.getElementById('tablebody3')
+    var newtabl4 = document.getElementById('tablebody4')
+    var newtabl5 = document.getElementById('tablebody5')
+    var newtabl6 = document.getElementById('tablebody6')
+    var newtabl7 = document.getElementById('tablebody7')
+    var newtabl8 = document.getElementById('tablebody8')
+    var newtabl9 = document.getElementById('tablebody9')
+    var newtabl10 = document.getElementById('tablebody10')
+    var newtabl11 = document.getElementById('tablebody11')
+    var newtabl12 = document.getElementById('tablebody12')
+    var newtabl13 = document.getElementById('tablebody13')
+    var newtabl14 = document.getElementById('tablebody14')
+    var newtabl15 = document.getElementById('tablebody15')
+    var newtabl16 = document.getElementById('tablebody16')
+    var newtabl17 = document.getElementById('tablebody17')
+    var newtabl18 = document.getElementById('tablebody18')
+    var newtabl19 = document.getElementById('tablebody19')
+    var newtabl20 = document.getElementById('tablebody20')
+    var newtabl21 = document.getElementById('tablebody21')
+    var newtabl22 = document.getElementById('tablebody22')
+    var newtabl23 = document.getElementById('tablebody23')
+    var newtabl24 = document.getElementById('tablebody24')
+    var newtabl25 = document.getElementById('tablebody25')
+    var newtabl26 = document.getElementById('tablebody26')
+    var newtabl27 = document.getElementById('tablebody27')
+    var newtabl28 = document.getElementById('tablebody28')
+    var newtabl29 = document.getElementById('tablebody29')
+    var newtabl30 = document.getElementById('tablebody30')
+    var searchBtn = document.getElementById('ser');
+
+
+    var tireli1 = document.getElementById('tire2')
+    var tireli2 = document.getElementById('tire2_one')
+    var tireli3 = document.getElementById('tire2_two')
+    var tireli4 = document.getElementById('tire2_three')
+    var tireli5 = document.getElementById('tire2_four')
+    var tireli6 = document.getElementById('tire2_five')
+    var tireli7 = document.getElementById('tire3')
+    var tireli8 = document.getElementById('tire3_one')
+    var tireli9 = document.getElementById('tire3_two')
+    var tireli10 = document.getElementById('tire3_three')
+    var tireli11 = document.getElementById('tire3_four')
+    var tireli12 = document.getElementById('tire3_five')
+    var tireli13 = document.getElementById('tire4')
+    var tireli14 = document.getElementById('tire4_one')
+    var tireli15 = document.getElementById('tire4_two')
+    var tireli16 = document.getElementById('tire4_three')
+    var tireli17 = document.getElementById('tire4_four')
+    var tireli18 = document.getElementById('tire4_five')
+    var tireli19 = document.getElementById('tire5')
+    var tireli20 = document.getElementById('tire5_one')
+    var tireli21 = document.getElementById('tire5_two')
+    var tireli22 = document.getElementById('tire5_three')
+    var tireli23 = document.getElementById('tire5_four')
+    var tireli24 = document.getElementById('tire5_five')
+    var tireli25 = document.getElementById('tire6')
+    var tireli26 = document.getElementById('tire6_one')
+    var tireli27 = document.getElementById('tire6_two')
+    var tireli28 = document.getElementById('tire6_three')
+    var tireli29 = document.getElementById('tire6_four')
+    var tireli30 = document.getElementById('tire6_five')
+
+
+    newtabl1.style.display = 'none'
+    newtabl2.style.display = 'none'
+    newtabl3.style.display = 'none'
+    newtabl4.style.display = 'none'
+    newtabl5.style.display = 'none'
+    newtabl6.style.display = 'none'
+    newtabl7.style.display = 'none'
+    newtabl8.style.display = 'none'
+    newtabl9.style.display = 'none'
+    newtabl10.style.display = 'none'
+    newtabl11.style.display = 'none'
+    newtabl12.style.display = 'none'
+    newtabl13.style.display = 'none'
+    newtabl14.style.display = 'none'
+    newtabl15.style.display = 'none'
+    newtabl16.style.display = 'none'
+    newtabl17.style.display = 'none'
+    newtabl18.style.display = 'none'
+    newtabl19.style.display = 'none'
+    newtabl20.style.display = 'none'
+    newtabl21.style.display = 'none'
+    newtabl22.style.display = 'none'
+    newtabl23.style.display = 'none'
+    newtabl24.style.display = 'none'
+    newtabl25.style.display = 'none'
+    newtabl26.style.display = 'none'
+    newtabl27.style.display = 'none'
+    newtabl28.style.display = 'none'
+    newtabl29.style.display = 'none'
+    newtabl30.style.display = 'none'
+    searchBtn.style.display = 'none'
+
+
+    // End Of Tire 1 Design
+
+    // Start Tire 2 Design
+
+
+    function list1() {
+
+      if (newtabl1.style.display == 'none') {
+        newtabl1.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+        searchBtn.style.display = 'block'
+
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli1.style.backgroundColor = '#40739e'
+
+      }
+      else {
+        newtabl1.style.display = 'none'
+        tireli1.style.backgroundColor = '#1e272e'
+      }
+    }
+
+
+    // Start Tire2_one
+
+
+
+    function list2() {
+
+      if (newtabl2.style.display == 'none') {
+        newtabl2.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl3.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#40739e'
+
+      }
+      else {
+        newtabl2.style.display = 'none'
+        tireli2.style.backgroundColor = '#1e272e'
+      }
+    }
+
+
+    function list3() {
+
+      if (newtabl3.style.display == 'none') {
+        newtabl3.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl2.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl3.style.display = 'none'
+        tireli3.style.backgroundColor = '#1e272e'
+      }
+    }
+
+
+    function list4() {
+
+      if (newtabl4.style.display == 'none') {
+        newtabl4.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl4.style.display = 'none'
+        tireli4.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function list5() {
+
+      if (newtabl5.style.display == 'none') {
+        newtabl5.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl5.style.display = 'none'
+        tireli5.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+
+
+    function list6() {
+
+      if (newtabl6.style.display == 'none') {
+        newtabl6.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli.style.backgroundColor = '#2d3436'
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#40739e'
+
+      }
+      else {
+        newtabl6.style.display = 'none'
+        tireli6.style.backgroundColor = '#1e272e'
+      }
+    }
+
+
+    function winlist1() {
+
+      if (newtabl7.style.display == 'none') {
+        newtabl7.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl6.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl7.style.display = 'none'
+        tireli7.style.backgroundColor = '#1e272e'
+      }
+    }
+
+    function winlist2() {
+
+      if (newtabl8.style.display == 'none') {
+        newtabl8.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl8.style.display = 'none'
+        tireli8.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function winlist3() {
+
+      if (newtabl9.style.display == 'none') {
+        newtabl9.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl9.style.display = 'none'
+        tireli9.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function winlist4() {
+
+      if (newtabl10.style.display == 'none') {
+        newtabl10.style.display = 'block'
+        newtabl1.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#40739e'
+      }
+      else {
+        newtabl10.style.display = 'none'
+        tireli10.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+    function winlist5() {
+
+      if (newtabl11.style.display == 'none') {
+        newtabl11.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#40739e'
+
+      }
+      else {
+        newtabl11.style.display = 'none'
+        tireli11.style.backgroundColor = '#1e272e'
+      }
+    }
+
+
+    function winlist6() {
+
+      if (newtabl12.style.display == 'none') {
+        newtabl12.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl12.style.display = 'none'
+        tireli12.style.backgroundColor = '#1e272e'
+      }
+    }
+
+    // wind Direction
+    function dirlist1() {
+
+      if (newtabl13.style.display == 'none') {
+        newtabl13.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl13.style.display = 'none'
+        tireli13.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+
+    function dirlist2() {
+
+      if (newtabl14.style.display == 'none') {
+        newtabl14.style.display = 'block'
+
+
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl14.style.display = 'none'
+        tireli14.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function dirlist3() {
+
+      if (newtabl15.style.display == 'none') {
+        newtabl15.style.display = 'block'
+
+        newtabl1.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl15.style.display = 'none'
+        tireli15.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function dirlist4() {
+
+      if (newtabl16.style.display == 'none') {
+        newtabl16.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl16.style.display = 'none'
+        tireli116.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function dirlist5() {
+
+      if (newtabl17.style.display == 'none') {
+        newtabl17.style.display = 'block'
+
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli.style.backgroundColor = '#2d3436'
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl17.style.display = 'none'
+        tireli17.style.backgroundColor = '#1e272e'
+      }
+    }
+
+
+    function dirlist6() {
+
+      if (newtabl18.style.display == 'none') {
+        newtabl18.style.display = 'block'
+
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli.style.backgroundColor = '#2d3436'
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl18.style.display = 'none'
+        tireli18.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function rainlist1() {
+
+      if (newtabl19.style.display == 'none') {
+        newtabl19.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli.style.backgroundColor = '#2d3436'
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl19.style.display = 'none'
+        tireli19.style.backgroundColor = '#1e272e'
+      }
+    }
+
+    function rainlist2() {
+
+      if (newtabl20.style.display == 'none') {
+        newtabl20.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl20.style.display = 'none'
+        tireli20.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function rainlist3() {
+
+      if (newtabl21.style.display == 'none') {
+        newtabl21.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#40739e'
+
+      }
+      else {
+        newtabl21.style.display = 'none'
+        tireli21.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+    function rainlist4() {
+
+      if (newtabl22.style.display == 'none') {
+        newtabl22.style.display = 'block'
+
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl3.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl22.style.display = 'none'
+        tireli22.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function rainlist5() {
+
+      if (newtabl23.style.display == 'none') {
+        newtabl23.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl23.style.display = 'none'
+        tireli23.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function rainlist6() {
+
+      if (newtabl24.style.display == 'none') {
+        newtabl24.style.display = 'block'
+        searchBtn.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli26.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl24.style.display = 'none'
+        tireli24.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+
+
+    function lightlist1() {
+
+      if (newtabl25.style.display == 'none') {
+        newtabl25.style.display = 'block'
+        newtabl.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl30.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli26.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#40739e'
+
+
+      }
+      else {
+        newtabl25.style.display = 'none'
+        tireli25.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+    function lightlist2() {
+
+      if (newtabl26.style.display == 'none') {
+        newtabl26.style.display = 'block'
+        newtabl.style.display = 'none'
+
+        newtabl1.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl30.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#1e272e'
+        tireli2.style.backgroundColor = '#1e272e'
+        tireli3.style.backgroundColor = '#1e272e'
+        tireli4.style.backgroundColor = '#1e272e'
+        tireli5.style.backgroundColor = '#1e272e'
+        tireli6.style.backgroundColor = '#1e272e'
+        tireli7.style.backgroundColor = '#1e272e'
+        tireli8.style.backgroundColor = '#1e272e'
+        tireli9.style.backgroundColor = '#1e272e'
+        tireli10.style.backgroundColor = '#1e272e'
+        tireli11.style.backgroundColor = '#1e272e'
+        tireli12.style.backgroundColor = '#1e272e'
+        tireli13.style.backgroundColor = '#1e272e'
+        tireli14.style.backgroundColor = '#1e272e'
+        tireli15.style.backgroundColor = '#1e272e'
+        tireli16.style.backgroundColor = '#1e272e'
+        tireli17.style.backgroundColor = '#1e272e'
+        tireli18.style.backgroundColor = '#1e272e'
+        tireli19.style.backgroundColor = '#1e272e'
+        tireli20.style.backgroundColor = '#1e272e'
+        tireli21.style.backgroundColor = '#1e272e'
+        tireli22.style.backgroundColor = '#1e272e'
+        tireli23.style.backgroundColor = '#1e272e'
+        tireli24.style.backgroundColor = '#1e272e'
+        tireli25.style.backgroundColor = '#1e272e'
+        tireli29.style.backgroundColor = '#1e272e'
+        tireli27.style.backgroundColor = '#1e272e'
+        tireli28.style.backgroundColor = '#1e272e'
+        tireli30.style.backgroundColor = '#1e272e'
+        tireli26.style.backgroundColor = '#40739e'
+        tireli26.style.color = 'black'
+        tireli26.style.paddingTop = '2px'
+        tireli26.style.paddingBottom = '2px'
+
+      }
+      else {
+        newtabl26.style.display = 'none'
+        tireli26.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+
+    function lightlist3() {
+
+      if (newtabl27.style.display == 'none') {
+        newtabl27.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl30.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#2d3436'
+        tireli2.style.backgroundColor = '#2d3436'
+        tireli3.style.backgroundColor = '#2d3436'
+        tireli4.style.backgroundColor = '#2d3436'
+        tireli5.style.backgroundColor = '#2d3436'
+        tireli6.style.backgroundColor = '#2d3436'
+        tireli7.style.backgroundColor = '#2d3436'
+        tireli8.style.backgroundColor = '#2d3436'
+        tireli9.style.backgroundColor = '#2d3436'
+        tireli10.style.backgroundColor = '#2d3436'
+        tireli11.style.backgroundColor = '#2d3436'
+        tireli12.style.backgroundColor = '#2d3436'
+        tireli13.style.backgroundColor = '#2d3436'
+        tireli14.style.backgroundColor = '#2d3436'
+        tireli15.style.backgroundColor = '#2d3436'
+        tireli16.style.backgroundColor = '#2d3436'
+        tireli17.style.backgroundColor = '#2d3436'
+        tireli18.style.backgroundColor = '#2d3436'
+        tireli19.style.backgroundColor = '#2d3436'
+        tireli20.style.backgroundColor = '#2d3436'
+        tireli21.style.backgroundColor = '#2d3436'
+        tireli22.style.backgroundColor = '#2d3436'
+        tireli23.style.backgroundColor = '#2d3436'
+        tireli24.style.backgroundColor = '#2d3436'
+        tireli25.style.backgroundColor = '#2d3436'
+        tireli26.style.backgroundColor = '#2d3436'
+        tireli29.style.backgroundColor = '#2d3436'
+        tireli28.style.backgroundColor = '#2d3436'
+        tireli30.style.backgroundColor = '#2d3436'
+        tireli27.style.backgroundColor = '#40739e'
+        tireli27.style.color = 'black'
+        tireli27.style.paddingTop = '2px'
+        tireli27.style.paddingBottom = '2px'
+
+      }
+      else {
+        newtabl27.style.display = 'none'
+        tireli27.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+
+    function lightlist4() {
+
+      if (newtabl28.style.display == 'none') {
+        newtabl28.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        searchBtn.style.display = 'block'
+
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl30.style.display = 'none'
+        newtabl29.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#2d3436'
+        tireli2.style.backgroundColor = '#2d3436'
+        tireli3.style.backgroundColor = '#2d3436'
+        tireli4.style.backgroundColor = '#2d3436'
+        tireli5.style.backgroundColor = '#2d3436'
+        tireli6.style.backgroundColor = '#2d3436'
+        tireli7.style.backgroundColor = '#2d3436'
+        tireli8.style.backgroundColor = '#2d3436'
+        tireli9.style.backgroundColor = '#2d3436'
+        tireli10.style.backgroundColor = '#2d3436'
+        tireli11.style.backgroundColor = '#2d3436'
+        tireli12.style.backgroundColor = '#2d3436'
+        tireli13.style.backgroundColor = '#2d3436'
+        tireli14.style.backgroundColor = '#2d3436'
+        tireli15.style.backgroundColor = '#2d3436'
+        tireli16.style.backgroundColor = '#2d3436'
+        tireli17.style.backgroundColor = '#2d3436'
+        tireli18.style.backgroundColor = '#2d3436'
+        tireli19.style.backgroundColor = '#2d3436'
+        tireli20.style.backgroundColor = '#2d3436'
+        tireli21.style.backgroundColor = '#2d3436'
+        tireli22.style.backgroundColor = '#2d3436'
+        tireli23.style.backgroundColor = '#2d3436'
+        tireli24.style.backgroundColor = '#2d3436'
+        tireli25.style.backgroundColor = '#2d3436'
+        tireli26.style.backgroundColor = '#2d3436'
+        tireli27.style.backgroundColor = '#2d3436'
+        tireli29.style.backgroundColor = '#2d3436'
+        tireli30.style.backgroundColor = '#2d3436'
+        tireli28.style.backgroundColor = '#40739e'
+        tireli28.style.color = 'black'
+        tireli28.style.paddingTop = '2px'
+        tireli28.style.paddingBottom = '2px'
+
+      }
+      else {
+        newtabl28.style.display = 'none'
+        tireli28.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function lightlist5() {
+
+      if (newtabl29.style.display == 'none') {
+        newtabl29.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl30.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#2d3436'
+        tireli2.style.backgroundColor = '#2d3436'
+        tireli3.style.backgroundColor = '#2d3436'
+        tireli4.style.backgroundColor = '#2d3436'
+        tireli5.style.backgroundColor = '#2d3436'
+        tireli6.style.backgroundColor = '#2d3436'
+        tireli7.style.backgroundColor = '#2d3436'
+        tireli8.style.backgroundColor = '#2d3436'
+        tireli9.style.backgroundColor = '#2d3436'
+        tireli10.style.backgroundColor = '#2d3436'
+        tireli11.style.backgroundColor = '#2d3436'
+        tireli12.style.backgroundColor = '#2d3436'
+        tireli13.style.backgroundColor = '#2d3436'
+        tireli14.style.backgroundColor = '#2d3436'
+        tireli15.style.backgroundColor = '#2d3436'
+        tireli16.style.backgroundColor = '#2d3436'
+        tireli17.style.backgroundColor = '#2d3436'
+        tireli18.style.backgroundColor = '#2d3436'
+        tireli19.style.backgroundColor = '#2d3436'
+        tireli20.style.backgroundColor = '#2d3436'
+        tireli21.style.backgroundColor = '#2d3436'
+        tireli22.style.backgroundColor = '#2d3436'
+        tireli23.style.backgroundColor = '#2d3436'
+        tireli24.style.backgroundColor = '#2d3436'
+        tireli25.style.backgroundColor = '#2d3436'
+        tireli26.style.backgroundColor = '#2d3436'
+        tireli27.style.backgroundColor = '#2d3436'
+        tireli28.style.backgroundColor = '#2d3436'
+        tireli30.style.backgroundColor = '#2d3436'
+        tireli29.style.backgroundColor = '#40739e'
+        tireli29.style.color = 'black'
+        tireli29.style.paddingTop = '2px'
+        tireli29.style.paddingBottom = '2px'
+
+      }
+      else {
+        newtabl29.style.display = 'none'
+        tireli29.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+    function lightlist6() {
+      if (newtabl30.style.display == 'none') {
+        newtabl30.style.display = 'block'
+        newtabl.style.display = 'none'
+        newtabl1.style.display = 'none'
+        newtabl2.style.display = 'none'
+        newtabl3.style.display = 'none'
+        newtabl4.style.display = 'none'
+        newtabl5.style.display = 'none'
+        searchBtn.style.display = 'block'
+        newtabl6.style.display = 'none'
+        newtabl7.style.display = 'none'
+        newtabl8.style.display = 'none'
+        newtabl9.style.display = 'none'
+        newtabl10.style.display = 'none'
+        newtabl11.style.display = 'none'
+        newtabl12.style.display = 'none'
+        newtabl13.style.display = 'none'
+        newtabl14.style.display = 'none'
+        newtabl15.style.display = 'none'
+        newtabl16.style.display = 'none'
+        newtabl17.style.display = 'none'
+        newtabl18.style.display = 'none'
+        newtabl19.style.display = 'none'
+        newtabl20.style.display = 'none'
+        newtabl21.style.display = 'none'
+        newtabl22.style.display = 'none'
+        newtabl23.style.display = 'none'
+        newtabl24.style.display = 'none'
+
+        newtabl25.style.display = 'none'
+        newtabl26.style.display = 'none'
+        newtabl27.style.display = 'none'
+        newtabl28.style.display = 'none'
+        newtabl29.style.display = 'none'
+
+        tireli1.style.backgroundColor = '#2d3436'
+        tireli2.style.backgroundColor = '#2d3436'
+        tireli3.style.backgroundColor = '#2d3436'
+        tireli4.style.backgroundColor = '#2d3436'
+        tireli5.style.backgroundColor = '#2d3436'
+        tireli6.style.backgroundColor = '#2d3436'
+        tireli7.style.backgroundColor = '#2d3436'
+        tireli8.style.backgroundColor = '#2d3436'
+        tireli9.style.backgroundColor = '#2d3436'
+        tireli10.style.backgroundColor = '#2d3436'
+        tireli11.style.backgroundColor = '#2d3436'
+        tireli12.style.backgroundColor = '#2d3436'
+        tireli13.style.backgroundColor = '#2d3436'
+        tireli14.style.backgroundColor = '#2d3436'
+        tireli15.style.backgroundColor = '#2d3436'
+        tireli16.style.backgroundColor = '#2d3436'
+        tireli17.style.backgroundColor = '#2d3436'
+        tireli18.style.backgroundColor = '#2d3436'
+        tireli19.style.backgroundColor = '#2d3436'
+        tireli20.style.backgroundColor = '#2d3436'
+        tireli21.style.backgroundColor = '#2d3436'
+        tireli22.style.backgroundColor = '#2d3436'
+        tireli23.style.backgroundColor = '#2d3436'
+        tireli24.style.backgroundColor = '#2d3436'
+        tireli25.style.backgroundColor = '#2d3436'
+        tireli26.style.backgroundColor = '#2d3436'
+        tireli27.style.backgroundColor = '#2d3436'
+        tireli28.style.backgroundColor = '#2d3436'
+        tireli29.style.backgroundColor = '#2d3436'
+        tireli30.style.backgroundColor = '#40739e'
+        tireli30.style.color = 'black'
+        tireli30.style.paddingTop = '2px'
+        tireli30.style.paddingBottom = '2px'
+
+      }
+      else {
+        newtabl30.style.display = 'none'
+        tireli30.style.backgroundColor = '#1e272e'
+
+      }
+    }
+
+
+  </script>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="js/tires1.js"></script>
+  <script src="js/tires2.js"></script>
+  <script src="js/tires2_one.js"></script>
+  <script src="js/tires2_two.js"></script>
+  <script src="js/tires2_three.js"></script>
+  <script src="js/tires2_four.js"></script>
+  <script src="js/tires2_five.js"></script>
+  <script src="js/tires3.js"></script>
+  <script src="js/tires3_one.js"></script>
+  <script src="js/tires3_two.js"></script>
+  <script src="js/tires3_three.js"></script>
+  <script src="js/tires3_four.js"></script>
+  <script src="js/tires3_five.js"></script>
+  <script src="js/tire4.js"></script>
+  <script src="js/tires4_one.js"></script>
+  <script src="js/tires4_two.js"></script>
+  <script src="js/tires4_three.js"></script>
+  <script src="js/tires4_four.js"></script>
+  <script src="js/tires4_five.js"></script>
+  <script src="js/tires5.js"></script>
+  <script src="js/tires5_one.js"></script>
+  <script src="js/tires5_two.js"></script>
+  <script src="js/tires5_three.js"></script>
+  <script src="js/tires5_four.js"></script>
+  <script src="js/tires5_five.js"></script>
+  <script src="js/tires6.js"></script>
+  <script src="js/tires6_one.js"></script>
+  <script src="js/tires6_two.js"></script>
+  <script src="js/tires6_three.js"></script>
+  <script src="js/tires6_four.js"></script>
+  <script src="js/tires6_five.js"></script>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

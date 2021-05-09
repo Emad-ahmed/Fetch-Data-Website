@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    background: #2d3436;
+    transition: .5s;
+
+}
+
+#sidenav ul {
+    margin: 10px 40px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: 19px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+
+}
+
+nav ul li a:hover {
+    color: salmon;
+    text-decoration: none;
+}
+
+a:hover {
+    color: salmon;
+}
+
+ul a:hover {
+    color: salmon;
+}
+
+#menuBtn {
+    width: 50px;
+    position: fixed;
+    left: 80px;
+    top: 35px;
+    z-index: 2;
+}
+
+
+#menuBtn1 {
+    width: 70px;
+    position: fixed;
+    left: 170px;
+    top: 500px;
+    z-index: 2;
+}
+
+.dropbtn {
+
+    color: white;
+    padding-left: 16px;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e272e;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: white;
+    color: salmon;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+
+.tableData {
+    text-align: center;
+}
+
+.table-active {
+    text-align: center;
+    color: #1B1464;
+}
+
+.nicetext1 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        color: #273c75;
+    }
+
+    25% {
+        color: #00a8ff;
+    }
+
+    50% {
+        color: #273c75;
+    }
+
+    75% {
+        color: #192a56;
+    }
+
+    100% {
+        color: #353b48;
+    }
+}
+
+.ave {
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example1 {
+    0% {
+        color: #3d4250;
+    }
+
+    25% {
+        color: #00a8ff;
+    }
+
+    50% {
+        color: #2d2f33;
+    }
+
+    75% {
+        color: #4c79e9;
+    }
+
+    100% {
+        color: #658ada;
+    }
+}
+
+
+#menuBtn2 {
+    width: 70px;
+    position: fixed;
+    left: 60px;
+    top: 2px;
+    z-index: 2;
+}
+
+#myinput:focus {
+    background-color: black;
+    color: white;
+}
+
+#graphHeading {
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes example2 {
+    0% {
+        color: #3d4250;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    75% {
+        color: #4c79e9;
+    }
+
+    100% {
+        color: #658ada;
+    }
+}
+
+.ave {
+    background-color: thistle;
+}
